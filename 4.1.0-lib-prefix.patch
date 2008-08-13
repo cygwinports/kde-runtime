@@ -1,0 +1,63 @@
+--- origsrc/kdebase-runtime-4.1.0/kioslave/man/CMakeLists.txt	2008-01-14 19:50:06.000000000 -0600
++++ src/kdebase-runtime-4.1.0/kioslave/man/CMakeLists.txt	2008-07-29 20:18:54.234375000 -0500
+@@ -18,7 +18,7 @@
+ set(kmanpart_PART_SRCS kmanpart.cpp )
+ 
+ 
+-kde4_add_plugin(kmanpart WITH_PREFIX ${kmanpart_PART_SRCS})
++kde4_add_plugin(kmanpart ${kmanpart_PART_SRCS})
+ 
+ 
+ target_link_libraries(kmanpart  ${KDE4_KHTML_LIBS} )
+--- origsrc/kdebase-runtime-4.1.0/kioslave/man/kmanpart.desktop	2008-07-15 14:49:19.000000000 -0500
++++ src/kdebase-runtime-4.1.0/kioslave/man/kmanpart.desktop	2008-07-29 20:18:59.703125000 -0500
+@@ -86,4 +86,4 @@
+ Name[te]=కెమేన్ భాగం
+ Name[x-test]=xxKManPartxx
+ X-KDE-ServiceTypes=KParts/ReadOnlyPart,Browser/View
+-X-KDE-Library=libkmanpart
++X-KDE-Library=kmanpart
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x pics origsrc/kdebase-runtime-4.1.0/renamedlgplugins/audio/CMakeLists.txt src/kdebase-runtime-4.1.0/renamedlgplugins/audio/CMakeLists.txt
+--- origsrc/kdebase-runtime-4.1.0/renamedlgplugins/audio/CMakeLists.txt	2008-01-04 17:54:42.000000000 -0600
++++ src/kdebase-runtime-4.1.0/renamedlgplugins/audio/CMakeLists.txt	2008-07-29 20:19:31.125000000 -0500
+@@ -6,7 +6,7 @@
+ 
+ set(renaudioplugin_PART_SRCS audiopreview.cpp audio_plugin.cpp )
+ 
+-kde4_add_plugin(renaudioplugin WITH_PREFIX ${renaudioplugin_PART_SRCS})
++kde4_add_plugin(renaudioplugin ${renaudioplugin_PART_SRCS})
+ 
+ 
+ 
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x pics origsrc/kdebase-runtime-4.1.0/renamedlgplugins/audio/renaudiodlg.desktop src/kdebase-runtime-4.1.0/renamedlgplugins/audio/renaudiodlg.desktop
+--- origsrc/kdebase-runtime-4.1.0/renamedlgplugins/audio/renaudiodlg.desktop	2008-07-15 14:49:14.000000000 -0500
++++ src/kdebase-runtime-4.1.0/renamedlgplugins/audio/renaudiodlg.desktop	2008-07-29 20:19:35.953125000 -0500
+@@ -58,5 +58,5 @@
+ Name[x-test]=xxAudio Previewxx
+ Name[zh_CN]=音频预览
+ Name[zh_TW]=音效預覽
+-X-KDE-Library=librenaudioplugin
++X-KDE-Library=renaudioplugin
+ X-KDE-ServiceTypes=RenameDialog/Plugin,audio/mpeg,audio/x-wav,application/ogg
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x pics origsrc/kdebase-runtime-4.1.0/renamedlgplugins/images/CMakeLists.txt src/kdebase-runtime-4.1.0/renamedlgplugins/images/CMakeLists.txt
+--- origsrc/kdebase-runtime-4.1.0/renamedlgplugins/images/CMakeLists.txt	2008-01-04 17:54:42.000000000 -0600
++++ src/kdebase-runtime-4.1.0/renamedlgplugins/images/CMakeLists.txt	2008-07-29 20:19:53.234375000 -0500
+@@ -6,7 +6,7 @@
+ 
+ set(renimageplugin_PART_SRCS imagevisualizer.cpp image_plugin.cpp )
+ 
+-kde4_add_plugin(renimageplugin WITH_PREFIX ${renimageplugin_PART_SRCS})
++kde4_add_plugin(renimageplugin ${renimageplugin_PART_SRCS})
+ 
+ 
+ 
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x pics origsrc/kdebase-runtime-4.1.0/renamedlgplugins/images/renimagedlg.desktop src/kdebase-runtime-4.1.0/renamedlgplugins/images/renimagedlg.desktop
+--- origsrc/kdebase-runtime-4.1.0/renamedlgplugins/images/renimagedlg.desktop	2008-07-23 03:25:30.000000000 -0500
++++ src/kdebase-runtime-4.1.0/renamedlgplugins/images/renimagedlg.desktop	2008-07-29 20:19:59.171875000 -0500
+@@ -58,5 +58,5 @@
+ Name[x-test]=xxImage Displayerxx
+ Name[zh_CN]=图片查看程序
+ Name[zh_TW]=影像顯示
+-X-KDE-Library=librenimageplugin
++X-KDE-Library=renimageplugin
+ X-KDE-ServiceTypes=RenameDialog/Plugin,image/jpeg,image/png

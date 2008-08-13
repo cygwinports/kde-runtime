@@ -1,0 +1,11 @@
+--- origsrc/kdebase-runtime-4.1.0/kioslave/fish/fish.cpp	2008-05-15 13:37:14.000000000 -0500
++++ src/kdebase-runtime-4.1.0/kioslave/fish/fish.cpp	2008-07-22 21:01:52.656250000 -0500
+@@ -433,7 +433,7 @@
+ #endif
+ 
+         int pgrp = getpid();
+-#if defined( _AIX) || defined( __hpux)
++#if defined( _AIX) || defined( __hpux) || defined(__CYGWIN__)
+         tcsetpgrp(0, pgrp);
+ #else
+         ioctl(0, TIOCSPGRP, (char *)&pgrp);

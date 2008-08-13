@@ -1,0 +1,12 @@
+--- origsrc/kdebase-runtime-4.1.0/kdeeject/kdeeject	2008-01-04 17:54:49.000000000 -0600
++++ src/kdebase-runtime-4.1.0/kdeeject/kdeeject	2008-07-23 01:11:56.937500000 -0500
+@@ -21,6 +21,9 @@
+       dev=`echo $1 | sed -E -e 's#/dev/##' -e 's/([0-9])./\1/'`
+       cdcontrol -f $dev eject >/dev/null 2>&1
+       ;;
++    CYGWIN*)
++      cdda-player -e $1 >/dev/null 2>&1
++      ;;
+     *)
+       eject $1 >/dev/null 2>&1
+       ;;

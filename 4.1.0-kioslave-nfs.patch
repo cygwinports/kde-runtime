@@ -1,0 +1,17 @@
+--- origsrc/kdebase-runtime-4.1.0/kioslave/CMakeLists.txt	2008-06-25 02:52:54.000000000 -0500
++++ src/kdebase-runtime-4.1.0/kioslave/CMakeLists.txt	2008-07-22 21:04:47.000000000 -0500
+@@ -24,10 +24,13 @@
+    add_subdirectory( floppy )
+    add_subdirectory( finger )
+    add_subdirectory( man )
+-   add_subdirectory( nfs )
+    add_subdirectory( thumbnail )
+    add_subdirectory( desktop )
+ 
++   if(NOT CYGWIN)
++      add_subdirectory( nfs )
++   endif(NOT CYGWIN)
++
+    if(SAMBA_FOUND)
+       add_subdirectory(smb)
+    endif(SAMBA_FOUND)
