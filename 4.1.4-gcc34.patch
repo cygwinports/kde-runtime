@@ -1,0 +1,31 @@
+--- origsrc/kdebase-runtime-4.1.4/nepomuk/strigibackend/sopranoindexwriter.cpp	2008-05-15 13:37:14.000000000 -0500
++++ src/kdebase-runtime-4.1.4/nepomuk/strigibackend/sopranoindexwriter.cpp	2009-01-25 13:54:50.359875000 -0600
+@@ -362,7 +362,7 @@ void Strigi::Soprano::IndexWriter::addVa
+     FileMetaData* md = reinterpret_cast<FileMetaData*>( idx->writerData() );
+     RegisteredFieldData* rfd = reinterpret_cast<RegisteredFieldData*>( field->writerData() );
+ 
+-    LiteralValue val( value );
++    LiteralValue val( (uint)value );
+     if ( field->type() == FieldRegister::datetimeType ) {
+         val = QDateTime::fromTime_t( value );
+     }
+@@ -389,7 +389,7 @@ void Strigi::Soprano::IndexWriter::addVa
+ 
+     d->repository->addStatement( Statement( md->fileUri,
+                                             rfd->property,
+-                                            LiteralValue( value ),
++                                            LiteralValue( (int)value ),
+                                             md->context) );
+ //    qDebug() << "IndexWriter::addValue done in thread" << QThread::currentThread();
+ }
+--- origsrc/kdebase-runtime-4.1.4/nepomuk/strigibackend/util.cpp	2008-05-07 04:05:22.000000000 -0500
++++ src/kdebase-runtime-4.1.4/nepomuk/strigibackend/util.cpp	2009-01-25 14:17:33.344250000 -0600
+@@ -110,7 +110,7 @@ Strigi::Variant Strigi::Soprano::Util::n
+         case QVariant::UInt:
+         case QVariant::LongLong:  // FIXME: no perfect conversion :(
+         case QVariant::ULongLong:
+-            return Strigi::Variant( node.literal().toInt() );
++            return Strigi::Variant( static_cast<int32_t>(node.literal().toInt()) );
+ 
+         case QVariant::Bool:
+             return Strigi::Variant( node.literal().toBool() );

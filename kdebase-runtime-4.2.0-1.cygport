@@ -1,0 +1,16 @@
+inherit kde4
+
+PATCH_URI="
+	4.1.0-kdeeject.patch
+	4.2.0-kioslave-nfs.patch
+	4.1.0-lib-prefix.patch
+	4.1.4-nepomuk-install.patch
+	4.2.0-nepomuk-build.patch
+	4.1.0-socklen_t.patch
+	4.1.0-tcsetpgrp.patch
+	4.1.4-gcc34.patch
+"
+
+DIFF_EXCLUDES="pics"
+
+PKG_IGNORE="usr/share/icons/hicolor/index.theme"

@@ -1,0 +1,11 @@
+--- origsrc/kdebase-runtime-4.1.4/nepomuk/server/CMakeLists.txt	2008-05-29 06:18:48.000000000 -0500
++++ src/kdebase-runtime-4.1.4/nepomuk/server/CMakeLists.txt	2009-01-25 14:28:05.000500000 -0600
+@@ -58,7 +58,7 @@ install(
+ 
+ install(
+   TARGETS kdeinit_nepomukserver
+-  DESTINATION ${LIB_INSTALL_DIR})
++  DESTINATION ${INSTALL_TARGETS_DEFAULT_ARGS})
+ 
+ install(
+   TARGETS nepomukserver
