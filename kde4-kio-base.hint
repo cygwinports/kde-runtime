@@ -1,0 +1,5 @@
+category: KDE
+requires: libgcc1 libjpeg62 libkdecore5 libQtCore4 libQtDBus4 libQtGui4 libQtSvg4 libQtXml4 libopenexr6 libstdc++6 libXcursor1
+external-source: kdebase-runtime
+sdesc: "KDE4 KIO base plugins"
+ldesc: "Base runtime components for the K Desktop Environment."

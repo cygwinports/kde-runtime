@@ -1,0 +1,13 @@
+usr/bin/cygkdeinit4_nepomukserver.dll
+usr/bin/nepomukserver.exe
+usr/bin/nepomukservicestub.exe
+usr/lib/kde4/*nepomuk*.dll
+usr/lib/strigi/strigiindex_sopranobackend.dll
+usr/share/autostart/nepomukserver.desktop
+usr/share/dbus-1/interfaces/org.kde.nepomuk.*.xml
+usr/share/dbus-1/interfaces/org.kde.NepomukServer.xml
+usr/share/kde4/apps/nepomuk/
+usr/share/kde4/apps/nepomukstorage/
+usr/share/kde4/apps/nepomukstrigiservice/
+usr/share/kde4/services/*nepomuk*
+usr/share/kde4/servicetypes/nepomukservice.desktop

@@ -1,0 +1,5 @@
+category: KDE
+requires: libgcc1 libkdecore5 libQt3Support4 libQtCore4 libQtDBus4 libQtGui4 libQtXml4 libstdc++6 findutils man perl
+external-source: kdebase-runtime
+sdesc: "KDE help viewer"
+ldesc: "Base runtime components for the K Desktop Environment."

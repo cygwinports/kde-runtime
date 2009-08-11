@@ -1,0 +1,15 @@
+usr/lib/kde4/fixhosturifilter.dll
+usr/lib/kde4/kshorturifilter.dll
+usr/lib/kde4/kuriikwsfilter.dll
+usr/lib/kde4/kurisearchfilter.dll
+usr/lib/kde4/libexec/klocaldomainurifilterhelper.exe
+usr/lib/kde4/localdomainurifilter.dll
+usr/share/kde4/apps/kconf_update/kuriikwsfilter.upd
+usr/share/kde4/config/kshorturifilterrc
+usr/share/kde4/services/fixhosturifilter.desktop
+usr/share/kde4/services/kshorturifilter.desktop
+usr/share/kde4/services/kuriikwsfilter.desktop
+usr/share/kde4/services/kurisearchfilter.desktop
+usr/share/kde4/services/localdomainurifilter.desktop
+usr/share/kde4/services/searchproviders/
+usr/share/kde4/servicetypes/searchprovider.desktop

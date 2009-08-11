@@ -9,6 +9,21 @@ PATCH_URI="
 	4.1.0-tcsetpgrp.patch
 "
 
-DIFF_EXCLUDES="pics"
+PKG_NAMES="${PN} ${PN}-data drkonqi4 kcmshell4 kde-icons-oxygen kde4-kcm-base
+           kde4-kded-base kde4-kio-base kde4-kurifilter-plugins kde4-menu
+           kde4-renamedlg-plugins kde4-style-oxygen kdebugdialog kdeeject4
+           kdesu4 kfile4 khelpcenter khotnewstuff4 kiconfinder kioclient
+           kioexec4 kmimetypefinder knetattach knotify4 kquitapp kreadconfig
+           kstart ksvgtopng ktraderclient kuiserver kwalletd nepomukserver
+           phonon-kde solid-hardware"
+kdebase_runtime_CONTENTS="etc/postinstall/ usr/share/doc/Cygwin/ usr/share/doc/${PN}/"
 
-PKG_IGNORE="usr/share/icons/hicolor/index.theme"
+for p in kde4-menu kfile4 kiconfinder kmimetypefinder kquitapp kstart \
+         ksvgtopng ktraderclient solid-hardware
+do
+	declare ${p/-/_}_CONTENTS="usr/bin/${p}.exe"
+done
+
+PKG_IGNORE="usr/lib/kde4/lib/* usr/share/icons/hicolor/index.theme"
+
+DIFF_EXCLUDES="pics"

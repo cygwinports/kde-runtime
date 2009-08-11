@@ -1,0 +1,5 @@
+usr/bin/cygkdeinit4_kwalletd.dll
+usr/bin/cygkwalletbackend-4.dll
+usr/bin/kwalletd.exe
+usr/share/doc/kwalletd/
+usr/share/kde4/services/kwalletd.desktop
