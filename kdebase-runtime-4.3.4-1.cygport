@@ -9,17 +9,17 @@ PATCH_URI="
 	4.1.0-tcsetpgrp.patch
 "
 
-PKG_NAMES="${PN} ${PN}-data drkonqi4 kcmshell4 kde-icons-oxygen kde4-kcm-base
+PKG_NAMES="${PN} ${PN}-data drkonqi4 kcmshell4 kde4-kcm-base
            kde4-kded-base kde4-kio-base kde4-kurifilter-plugins kde4-menu
            kde4-renamedlg-plugins kde4-style-oxygen kdebugdialog kdeeject4
-           kdesu4 kfile4 khelpcenter khotnewstuff4 kiconfinder kioclient
-           kioexec4 kmimetypefinder knetattach knotify4 kquitapp kreadconfig
-           kstart ksvgtopng ktraderclient kuiserver kwalletd nepomukserver
-           phonon-kde solid-hardware"
+           kdesu4 keditfiletype kfile4 khelpcenter khotnewstuff4 kiconfinder
+           kioclient kioexec4 kmimetypefinder knetattach knotify4 kquitapp
+           kreadconfig kstart ksvgtopng ktraderclient kuiserver kwalletd
+           nepomukserver phonon-kde plasma-scriptengine-javascript plasmapkg solid-hardware"
 kdebase_runtime_CONTENTS="etc/postinstall/ usr/share/doc/Cygwin/ usr/share/doc/${PN}/"
 
-for p in kde4-menu kfile4 kiconfinder kmimetypefinder kquitapp kstart \
-         ksvgtopng ktraderclient solid-hardware
+for p in kde4-menu keditfiletype kfile4 kiconfinder kmimetypefinder kquitapp \
+         kstart ksvgtopng ktraderclient plasmapkg solid-hardware
 do
 	declare ${p/-/_}_CONTENTS="usr/bin/${p}.exe"
 done

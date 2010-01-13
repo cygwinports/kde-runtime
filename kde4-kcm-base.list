@@ -1,6 +1,7 @@
 usr/lib/kde4/kcmspellchecking.dll
 usr/lib/kde4/kcm_componentchooser.dll
 usr/lib/kde4/kcm_emoticons.dll
+usr/lib/kde4/kcm_filetypes.dll
 usr/lib/kde4/kcm_icons.dll
 usr/lib/kde4/kcm_kded.dll
 usr/lib/kde4/kcm_kdnssd.dll
@@ -14,6 +15,7 @@ usr/share/kde4/config/emoticons.knsrc
 usr/share/kde4/config/icons.knsrc
 usr/share/kde4/services/componentchooser.desktop
 usr/share/kde4/services/emoticons.desktop
+usr/share/kde4/services/filetypes.desktop
 usr/share/kde4/services/icons.desktop
 usr/share/kde4/services/kcmkded.desktop
 usr/share/kde4/services/kcmnotify.desktop

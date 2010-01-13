@@ -1,5 +1,5 @@
 category: KDE
-requires: libclucene3 libgcc1 libkdecore5 libnepomuk4 libQtCore4 libQtDBus4 libQtGui4 libsoprano4 libstreamanalyzer0 libstreams0 libstdc++6
+requires: libclucene3 libgcc1 libkdecore5 libknotificationitem1_1 libnepomuk4 libQtCore4 libQtDBus4 libQtGui4 libsoprano4 libstreamanalyzer0 libstreams0 libstdc++6
 external-source: kdebase-runtime
 sdesc: "KDE4 Nepomuk service manager"
 ldesc: "Base runtime components for the K Desktop Environment."

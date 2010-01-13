@@ -3,35 +3,38 @@ kdebase-runtime
 Base runtime components for the K Desktop Environment.
 
 Runtime requirements:
-  cygwin-1.7.0-56
+  cygwin-1.7.1-1
   libclucene3-0.9.21b-10
-  libgcc1-4.3.2-2
-  libjpeg62-6b-20
-  libkdecore5-4.2.4-1
-  libopenexr6-1.6.1-10
+  libgcc1-4.3.4-3
+  libjpeg7-7-10
+  libkdecore5-4.3.4-1
+  libknotificationitem1_1-4.3.4-1
+  libnepomuk4-4.3.4-1
   libphonon4-4.3.1-2
-  libQt3Support4-4.5.2-1
-  libQtCore4-4.5.2-1
-  libQtDBus4-4.5.2-1
-  libQtGui4-4.5.2-1
-  libQtSvg4-4.5.2-1
-  libQtXml4-4.5.2-1
-  libsoprano4-2.2.3-1
-  libstdc++6-4.3.2-2
-  libstreamanalyzer0-0.6.5-1
-  libstreams0-0.6.5-1
-  libX11_6-1.2-10
-  libXcursor1-1.1.9-10
+  libplasma3-4.3.4-1
+  libQt3Support4-4.5.3-1
+  libQtCore4-4.5.3-1
+  libQtDBus4-4.5.3-1
+  libQtGui4-4.5.3-1
+  libQtScript4-4.5.3-1
+  libQtSvg4-4.5.3-1
+  libQtXml4-4.5.3-1
+  libsoprano4-2.3.4-1
+  libstdc++6-4.3.4-3
+  libstreamanalyzer0-0.7.0-1
+  libstreams0-0.7.0-1
+  libX11_6-1.3.2-2
+  libXcursor1-1.1.10-1
   libxine1-1.1.16.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
   automoc4-0.9.88-10
   binutils-2.19.51-1
-  cmake-2.6.4-10
-  cygport-0.9.8-1
-  gcc4-core-4.3.2-2
-  gcc4-g++-4.3.2-2
+  cmake-2.8.0-11
+  cygport-0.9.80-1
+  gcc4-core-4.3.4-3
+  gcc4-g++-4.3.4-3
   make-3.81-2
   pkg-config-0.23b-10
 
@@ -39,55 +42,61 @@ Canonical website:
   http://www.kde.org/
 
 Canonical download:
-  ftp://ftp.kde.org/pub/kde/stable/4.2.4/
+  ftp://ftp.kde.org/pub/kde/stable/4.3.4/
 
 -------------------------------------------
 
 Build instructions:
-  unpack kdebase-runtime-4.2.4-X-src.tar.bz2
+  unpack kdebase-runtime-4.3.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./kdebase-runtime-4.2.4-X.cygport all
+  cygport ./kdebase-runtime-4.3.4-X.cygport all
 
 This will create:
-  /usr/src/drkonqi4-4.2.4-X.tar.bz2
-  /usr/src/kcmshell4-4.2.4-X.tar.bz2
-  /usr/src/kde4-kcm-base-4.2.4-X.tar.bz2
-  /usr/src/kde4-kded-base-4.2.4-X.tar.bz2
-  /usr/src/kde4-kio-base-4.2.4-X.tar.bz2
-  /usr/src/kde4-kurifilter-plugins-4.2.4-X.tar.bz2
-  /usr/src/kde4-menu-4.2.4-X.tar.bz2
-  /usr/src/kde4-renamedlg-plugins-4.2.4-X.tar.bz2
-  /usr/src/kde4-style-oxygen-4.2.4-X.tar.bz2
-  /usr/src/kdebase-runtime-4.2.4-X-src.tar.bz2
-  /usr/src/kdebase-runtime-4.2.4-X.tar.bz2
-  /usr/src/kdebase-runtime-data-4.2.4-X.tar.bz2
-  /usr/src/kdebugdialog-4.2.4-X.tar.bz2
-  /usr/src/kdeeject4-4.2.4-X.tar.bz2
-  /usr/src/kdesu4-4.2.4-X.tar.bz2
-  /usr/src/kfile4-4.2.4-X.tar.bz2
-  /usr/src/khelpcenter-4.2.4-X.tar.bz2
-  /usr/src/khotnewstuff4-4.2.4-X.tar.bz2
-  /usr/src/kiconfinder-4.2.4-X.tar.bz2
-  /usr/src/kioclient-4.2.4-X.tar.bz2
-  /usr/src/kioexec4-4.2.4-X.tar.bz2
-  /usr/src/kmimetypefinder-4.2.4-X.tar.bz2
-  /usr/src/knetattach-4.2.4-X.tar.bz2
-  /usr/src/knotify4-4.2.4-X.tar.bz2
-  /usr/src/kquitapp-4.2.4-X.tar.bz2
-  /usr/src/kreadconfig-4.2.4-X.tar.bz2
-  /usr/src/kstart-4.2.4-X.tar.bz2
-  /usr/src/ktraderclient-4.2.4-X.tar.bz2
-  /usr/src/kuiserver-4.2.4-X.tar.bz2
-  /usr/src/kwalletd-4.2.4-X.tar.bz2
-  /usr/src/nepomukserver-4.2.4-X.tar.bz2
-  /usr/src/phonon-kde-4.2.4-X.tar.bz2
-  /usr/src/solid-hardware-4.2.4-X.tar.bz2
+  /usr/src/drkonqi4-4.3.4-X.tar.bz2
+  /usr/src/kcmshell4-4.3.4-X.tar.bz2
+  /usr/src/kde4-kcm-base-4.3.4-X.tar.bz2
+  /usr/src/kde4-kded-base-4.3.4-X.tar.bz2
+  /usr/src/kde4-kio-base-4.3.4-X.tar.bz2
+  /usr/src/kde4-kurifilter-plugins-4.3.4-X.tar.bz2
+  /usr/src/kde4-menu-4.3.4-X.tar.bz2
+  /usr/src/kde4-renamedlg-plugins-4.3.4-X.tar.bz2
+  /usr/src/kde4-style-oxygen-4.3.4-X.tar.bz2
+  /usr/src/kdebase-runtime-4.3.4-X-src.tar.bz2
+  /usr/src/kdebase-runtime-4.3.4-X.tar.bz2
+  /usr/src/kdebase-runtime-data-4.3.4-X.tar.bz2
+  /usr/src/kdebugdialog-4.3.4-X.tar.bz2
+  /usr/src/kdeeject4-4.3.4-X.tar.bz2
+  /usr/src/kdesu4-4.3.4-X.tar.bz2
+  /usr/src/keditfiletype-4.3.4-X.tar.bz2
+  /usr/src/kfile4-4.3.4-X.tar.bz2
+  /usr/src/khelpcenter-4.3.4-X.tar.bz2
+  /usr/src/khotnewstuff4-4.3.4-X.tar.bz2
+  /usr/src/kiconfinder-4.3.4-X.tar.bz2
+  /usr/src/kioclient-4.3.4-X.tar.bz2
+  /usr/src/kioexec4-4.3.4-X.tar.bz2
+  /usr/src/kmimetypefinder-4.3.4-X.tar.bz2
+  /usr/src/knetattach-4.3.4-X.tar.bz2
+  /usr/src/knotify4-4.3.4-X.tar.bz2
+  /usr/src/kquitapp-4.3.4-X.tar.bz2
+  /usr/src/kreadconfig-4.3.4-X.tar.bz2
+  /usr/src/kstart-4.3.4-X.tar.bz2
+  /usr/src/ktraderclient-4.3.4-X.tar.bz2
+  /usr/src/kuiserver-4.3.4-X.tar.bz2
+  /usr/src/kwalletd-4.3.4-X.tar.bz2
+  /usr/src/nepomukserver-4.3.4-X.tar.bz2
+  /usr/src/phonon-kde-4.3.4-X.tar.bz2
+  /usr/src/plasma-scriptengine-javascript-4.3.4-X.tar.bz2
+  /usr/src/plasmapkg-4.3.4-X.tar.bz2
+  /usr/src/solid-hardware-4.3.4-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 4.3.4-1 -----
+Version bump for KDE 4.3.
 
 ----- version 4.2.4-1 -----
 Initial release for Cygwin 1.7.

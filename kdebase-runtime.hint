@@ -1,4 +1,4 @@
 category: KDE
-requires: drkonqi4 kcmshell4 kde-icons-oxygen kde4-kcm-base kde4-kded-base kde4-kio-base kde4-kurifilter-plugins kde4-menu kde4-renamedlg-plugins kde4-style-oxygen kdebase-runtime-data kdebugdialog kdeeject4 kdesu4 kfile4 khelpcenter khotnewstuff4 kiconfinder kioclient kioexec4 kmimetypefinder knetattach knotify4 kquitapp kreadconfig kstart ksvgtopng ktraderclient kuiserver kwalletd nepomukserver phonon-kde solid-hardware 
+requires: drkonqi4 kcmshell4 kde4-kcm-base kde4-kded-base kde4-kio-base kde4-kurifilter-plugins kde4-menu kde4-renamedlg-plugins kde4-style-oxygen kdebase-runtime-data kdebugdialog kdeeject4 kdesu4 keditfiletype kfile4 khelpcenter khotnewstuff4 kiconfinder kioclient kioexec4 kmimetypefinder knetattach knotify4 kquitapp kreadconfig kstart ksvgtopng ktraderclient kuiserver kwalletd nepomukserver phonon-kde plasmapkg solid-hardware oxygen-icons
 sdesc: "KDE4 base runtime components (meta-package)"
 ldesc: "Base runtime components for the K Desktop Environment."
