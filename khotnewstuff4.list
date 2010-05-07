@@ -1,2 +1,5 @@
-usr/bin/khotnewstuff4.exe
-usr/share/kde4/config/khotnewstuff.knsrc
+usr/bin/khotnewstuff*
+usr/lib/kde4/attica_kde.dll
+usr/lib/kde4/kcm_attica.dll
+usr/share/kde4/config/khotnewstuff*.knsrc
+usr/share/kde4/services/kcm_attica.desktop

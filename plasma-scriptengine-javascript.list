@@ -1,4 +1,2 @@
-usr/lib/kde4/plasma_appletscript_simple_javascript.dll
-usr/lib/kde4/plasma_runnerscript_javascript.dll
-usr/share/kde4/services/plasma-scriptengine-applet-simple-javascript.desktop
-usr/share/kde4/services/plasma-scriptengine-runner-javascript.desktop
+usr/lib/kde4/plasma_*_javascript.dll
+usr/share/kde4/services/plasma-scriptengine-*

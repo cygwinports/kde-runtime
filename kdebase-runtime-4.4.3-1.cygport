@@ -2,11 +2,12 @@ inherit kde4
 
 PATCH_URI="
 	4.1.0-kdeeject.patch
-	4.2.0-kioslave-nfs.patch
+	4.4.2-kioslave-nfs.patch
 	4.1.4-nepomuk-install.patch
-	4.2.0-nepomuk-build.patch
+	4.4.2-nepomuk-build.patch
 	4.1.0-socklen_t.patch
 	4.1.0-tcsetpgrp.patch
+	4.4.2-attica-install.patch
 "
 
 PKG_NAMES="${PN} ${PN}-data drkonqi4 kcmshell4 kde4-kcm-base

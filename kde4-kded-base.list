@@ -1,12 +1,17 @@
 usr/bin/cygkdeinit4_kglobalaccel.dll
 usr/bin/kglobalaccel.exe
+usr/lib/kde4/kcm_device_automounter.dll
+usr/lib/kde4/kded_device_automounter.dll
 usr/lib/kde4/kded_networkwatcher.dll
 usr/lib/kde4/kded_kpasswdserver.dll
 usr/lib/kde4/kded_ktimezoned.dll
 usr/lib/kde4/kded_solidautoeject.dll
 usr/lib/kde4/kded_soliduiserver.dll
 usr/share/dbus-1/interfaces/org.kde.KTimeZoned.xml
+usr/share/kde4/apps/kglobalaccel/
+usr/share/kde4/services/device_automounter_kcm.desktop
 usr/share/kde4/services/kglobalaccel.desktop
+usr/share/kde4/services/kded/device_automounter.desktop
 usr/share/kde4/services/kded/kpasswdserver.desktop
 usr/share/kde4/services/kded/networkwatcher.desktop
 usr/share/kde4/services/kded/ktimezoned.desktop

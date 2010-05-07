@@ -1,0 +1,11 @@
+--- origsrc/kdebase-runtime-4.4.2/nepomuk/services/strigi/priority.cpp	2009-10-02 09:53:53.000000000 -0500
++++ src/kdebase-runtime-4.4.2/nepomuk/services/strigi/priority.cpp	2010-04-28 22:45:26.657702600 -0500
+@@ -31,7 +31,7 @@
+ #include <sys/resource.h>
+ 
+ #include <unistd.h>
+-#ifndef _WIN32
++#if !defined(Q_OS_WIN) && !defined(Q_OS_CYGWIN)
+ #include <sys/syscall.h>
+ #include <errno.h>
+ 
