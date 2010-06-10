@@ -1,6 +1,7 @@
 inherit kde4
 
 PATCH_URI="
+	http://patch-tracker.debian.org/patch/series/dl/kdebase-runtime/4:4.4.4-1/04_attica_0.1.4_compat.diff
 	4.1.0-kdeeject.patch
 	4.4.2-kioslave-nfs.patch
 	4.1.4-nepomuk-install.patch
