@@ -1,3 +1,4 @@
 usr/bin/cygkdeinit4_kuiserver.dll
 usr/bin/kuiserver.exe
+usr/share/dbus-1/services/org.kde.kuiserver.service
 usr/share/kde4/services/kuiserver.desktop
