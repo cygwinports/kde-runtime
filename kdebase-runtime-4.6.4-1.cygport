@@ -2,23 +2,24 @@ inherit kde4
 
 PATCH_URI="
 	4.1.0-kdeeject.patch
-	4.4.2-kioslave-nfs.patch
+	4.6.4-kioslave-libtirpc.patch
 	4.1.4-nepomuk-install.patch
 	4.1.0-socklen_t.patch
 	4.1.0-tcsetpgrp.patch
 	4.5.4-attica-install.patch
 	4.5.4-nepomuk-build.patch
+	4.6.4-plasma-qml-module.patch
 "
 
 PKG_NAMES="${PN} ${PN}-data drkonqi4 kde4-base-plugins kde4-menu
            kdebugdialog keditfiletype kfile4 khelpcenter khotnewstuff4 kiconfinder
            kioclient kmimetypefinder knetattach knotify4 kquitapp
            kreadconfig kstart ksvgtopng ktraderclient kuiserver kwalletd
-           nepomukserver phonon-kde plasma-scriptengine-javascript plasmapkg solid-hardware"
+           nepomukserver phonon-kde plasma-base-plugins solid-hardware"
 kdebase_runtime_CONTENTS="etc/postinstall/ usr/share/doc/${PN}/"
 
 for p in kde4-menu keditfiletype kfile4 kiconfinder kmimetypefinder kquitapp \
-         kstart ksvgtopng ktraderclient plasmapkg solid-hardware
+         kstart ksvgtopng ktraderclient solid-hardware
 do
 	declare ${p/-/_}_CONTENTS="usr/bin/${p}.exe"
 done
@@ -26,3 +27,6 @@ done
 PKG_IGNORE="usr/lib/lib*.a usr/share/icons/hicolor/index.theme"
 
 DIFF_EXCLUDES="pics"
+
+# phonon-xine is deprecated
+CYGCMAKE_ARGS="-DWITH_Xine=OFF"

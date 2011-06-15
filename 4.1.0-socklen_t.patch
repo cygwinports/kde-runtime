@@ -1,17 +1,3 @@
---- origsrc/kdebase-runtime-4.1.0/kdesu/kdesud/kdesud.cpp	2008-01-04 17:55:12.000000000 -0600
-+++ src/kdebase-runtime-4.1.0/kdesu/kdesud/kdesud.cpp	2008-07-22 21:09:52.578125000 -0500
-@@ -100,7 +100,11 @@
- 
- // FIXME: This is just here to make it compile
- // It would be better to fix it more globally (Caleb Tennis)
-+#ifdef Q_OS_CYGWIN
-+typedef int ksocklen_t;
-+#else
- typedef unsigned ksocklen_t;
-+#endif
- 
- void kdesud_cleanup()
- {
 --- origsrc/kdebase-runtime-4.1.0/kdesu/kdesud/secure.cpp	2008-01-04 17:55:12.000000000 -0600
 +++ src/kdebase-runtime-4.1.0/kdesu/kdesud/secure.cpp	2008-07-22 21:12:04.875000000 -0500
 @@ -24,7 +24,11 @@
