@@ -9,3 +9,14 @@
  
  install(
    TARGETS nepomukserver
+--- origsrc/kde-runtime-4.7.0/nepomuk/services/storage/lib/CMakeLists.txt	2011-07-07 09:03:18.000000000 -0500
++++ src/kde-runtime-4.7.0/nepomuk/services/storage/lib/CMakeLists.txt	2011-08-08 12:14:18.870773900 -0500
+@@ -40,7 +40,7 @@ target_link_libraries(nepomukdatamanagem
+   ${NEPOMUK_LIBRARIES}
+   ${KDE4_KDECORE_LIBS})
+ 
+-install(TARGETS nepomukdatamanagement DESTINATION ${LIB_INSTALL_DIR})
++install(TARGETS nepomukdatamanagement ${INSTALL_TARGETS_DEFAULT_ARGS})
+ install(FILES
+   simpleresource.h
+   simpleresourcegraph.h

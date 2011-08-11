@@ -1,0 +1,4 @@
+category: KDE
+requires: libattica0 libexiv2_9 libgcc1 libIlmImf6 libjpeg8 libkdecore5 libphonon4 libplasma3 libQtCore4 libQtDBus4 libQtDeclarative4 libQtGui4 libQtNetwork4 libQtScript4 libQtSvg4 libQtWebKit4 libQtXml4 libqzeitgeist0 libsoprano4 libssh4 libstdc++6 libstreamanalyzer0 libstreams0 libtirpc1 libX11_6 libXcursor1
+sdesc: "KDE4 base runtime components"
+ldesc: "Base runtime components for the K Desktop Environment."

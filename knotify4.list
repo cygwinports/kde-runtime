@@ -1,8 +1,0 @@
-usr/bin/cygknotifyplugin.dll
-usr/bin/knotify4.exe
-usr/include/kde4/knotify*
-usr/share/dbus-1/services/org.kde.knotify.service
-usr/share/kde4/apps/hardwarenotifications/hardwarenotifications.notifyrc
-usr/share/kde4/apps/kde/kde.notifyrc
-usr/share/kde4/services/knotify4.desktop
-usr/share/kde4/servicetypes/knotifynotifymethod.desktop

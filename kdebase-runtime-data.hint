@@ -1,4 +1,0 @@
-category: KDE
-external-source: kdebase-runtime
-sdesc: "KDE runtime data"
-ldesc: "Base runtime components for the K Desktop Environment."
