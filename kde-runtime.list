@@ -11,7 +11,6 @@ usr/bin/cygknotifyplugin.dll
 usr/bin/cygkwalletbackend-4.dll
 usr/bin/cygmolletnetwork-4.dll
 usr/bin/cygnepomuk*
-usr/bin/kactivitymanagerd.exe
 usr/bin/kcmshell4.exe
 usr/bin/kde-*.exe
 usr/bin/kde4
@@ -51,6 +50,7 @@ usr/lib/kde4/libexec/kdesud.exe
 usr/lib/kde4/libexec/kdontchangethehostname.exe
 usr/lib/kde4/libexec/kioexec.exe
 usr/lib/kde4/libexec/knetattach.exe
+usr/lib/kde4/platformimports/
 usr/lib/kde4/plugins/phonon_platform/
 usr/lib/libknotifyplugin.dll.a
 usr/share/applications/kde4/knetattach.desktop
@@ -76,12 +76,14 @@ usr/share/icons/hicolor/*/apps/knetattach.*
 usr/share/kde4/apps/cmake/modules/FindCLucene.cmake
 usr/share/kde4/apps/cmake/modules/FindSLP.cmake
 usr/share/kde4/apps/desktoptheme/
+usr/share/kde4/apps/fileindexerservice/
 usr/share/kde4/apps/hardwarenotifications/
 usr/share/kde4/apps/kcm_componentchooser
 usr/share/kde4/apps/kcm_phonon/
 usr/share/kde4/apps/kcmlocale/
 usr/share/kde4/apps/kconf_update/devicepreference.upd
 usr/share/kde4/apps/kconf_update/kuriikwsfilter.upd
+usr/share/kde4/apps/kconf_update/nepomukstrigiservice-migrate.upd
 usr/share/kde4/apps/kde/kde.notifyrc
 usr/share/kde4/apps/kglobalaccel/
 usr/share/kde4/apps/kio_*/
@@ -125,7 +127,6 @@ usr/share/kde4/services/icons.desktop
 usr/share/kde4/services/imagethumbnail.desktop
 usr/share/kde4/services/info.protocol
 usr/share/kde4/services/jpegthumbnail.desktop
-usr/share/kde4/services/kactivitymanagerd.desktop
 usr/share/kde4/services/kcm_attica.desktop
 usr/share/kde4/services/kcm_kdnssd.desktop
 usr/share/kde4/services/kcm_nepomuk.desktop
