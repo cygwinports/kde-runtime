@@ -1,7 +1,7 @@
 inherit kde4
 
 NAME="kde-runtime"
-VERSION=4.9.5
+VERSION=4.10.5
 RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE4 base runtime components"
@@ -10,18 +10,16 @@ DESCRIPTION="Base runtime components for the K Desktop Environment."
 PATCH_URI="
 	4.1.0-kdeeject.patch
 	4.6.4-kioslave-libtirpc.patch
-	4.1.4-nepomuk-install.patch
 	4.1.0-socklen_t.patch
 	4.1.0-tcsetpgrp.patch
 	4.5.4-attica-install.patch
-	4.5.4-nepomuk-build.patch
-	4.6.4-plasma-qml-module.patch
+	4.10.5-plasma-qml-module.patch
 "
 
 PKG_NAMES="${NAME} drkonqi4 khelpcenter"
 kde_runtime_REQUIRES="soprano virtuoso-opensource"
 kde_runtime_CONTENTS="
-	--exclude=khelpcenter*
+	--exclude=*khelpcenter*
 	--exclude=index.theme
 	etc/dbus-1/system.d/org.kde.kcontrol.kcmremotewidgets.conf
 	etc/postinstall/kde-runtime.sh
@@ -42,15 +40,15 @@ kde_runtime_CONTENTS="
 	usr/lib/kde4/plugins/phonon_platform/
 	usr/lib/libknotifyplugin.dll.a
 	usr/share/applications/kde4/knetattach.desktop
-	usr/share/applications/kde4/nepomuk*
-	usr/share/autostart/nepomuk*
+	usr/share/applications/kde4/nepomukcontroller.desktop
+	usr/share/autostart/nepomukcontroller.desktop
 	usr/share/dbus-1/interfaces/org.kde.KTimeZoned.xml
-	usr/share/dbus-1/interfaces/org.kde.*epomuk*
 	usr/share/dbus-1/interfaces/org.kde.network.kioslavenotifier.xml
 	usr/share/dbus-1/services/org.kde.knotify.service
 	usr/share/dbus-1/services/org.kde.kuiserver.service
 	usr/share/dbus-1/system-services/org.kde.kcontrol.kcmremotewidgets.service
 	usr/share/desktop-directories/
+	usr/share/doc/HTML/en/fundamentals/
 	usr/share/doc/HTML/en/kcontrol/
 	usr/share/doc/HTML/en/kdebugdialog/
 	usr/share/doc/HTML/en/kdesu/
@@ -63,14 +61,12 @@ kde_runtime_CONTENTS="
 	usr/share/icons/hicolor/*/apps/knetattach.*
 	usr/share/kde4/apps/cmake/
 	usr/share/kde4/apps/desktoptheme/
-	usr/share/kde4/apps/fileindexerservice/
 	usr/share/kde4/apps/hardwarenotifications/
 	usr/share/kde4/apps/kcm_componentchooser
 	usr/share/kde4/apps/kcm_phonon/
 	usr/share/kde4/apps/kcmlocale/
 	usr/share/kde4/apps/kconf_update/devicepreference.upd
 	usr/share/kde4/apps/kconf_update/kuriikwsfilter.upd
-	usr/share/kde4/apps/kconf_update/nepomukstrigiservice-migrate.upd
 	usr/share/kde4/apps/kde/kde.notifyrc
 	usr/share/kde4/apps/kglobalaccel/
 	usr/share/kde4/apps/kio_*/
@@ -78,7 +74,6 @@ kde_runtime_CONTENTS="
 	usr/share/kde4/apps/ksmserver/windowmanagers/
 	usr/share/kde4/apps/kwalletd/
 	usr/share/kde4/apps/libphonon/
-	usr/share/kde4/apps/nepomuk*
 	usr/share/kde4/apps/phonon/
 	usr/share/kde4/apps/remoteview/
 	usr/share/kde4/config.kcfg/jpegcreatorsettings.kcfg
@@ -91,7 +86,6 @@ kde_runtime_CONTENTS="
 	usr/share/locale/
 	usr/share/man/
 	usr/share/mime/packages/network.xml
-	usr/share/ontology/
 	usr/share/sounds/
 "
 drkonqi4_SUMMARY="KDE4 crash handler"
