@@ -9,6 +9,17 @@
  target_link_libraries(corebindingsplugin ${KDE4_PLASMA_LIBS} ${QT_QTSCRIPT_LIBRARY} ${QT_QTDECLARATIVE_LIBRARY} ${KDECLARATIVE_LIBRARIES})
  
  install(TARGETS corebindingsplugin DESTINATION ${IMPORTS_INSTALL_DIR}/org/kde/plasma/core)
+--- origsrc/kde-runtime-4.11.5/plasma/declarativeimports/dirmodel/CMakeLists.txt	2014-01-02 13:28:08.000000000 -0600
++++ src/kde-runtime-4.11.5/plasma/declarativeimports/dirmodel/CMakeLists.txt	2014-02-23 19:20:42.058062500 -0600
+@@ -7,7 +7,7 @@ set(dirmodel_SRCS
+ 
+ qt4_automoc(${dirmodel_SRCS})
+ 
+-kde4_add_library(dirmodelplugin SHARED ${dirmodel_SRCS})
++kde4_add_library(dirmodelplugin MODULE ${dirmodel_SRCS})
+ target_link_libraries(dirmodelplugin
+         ${QT_QTCORE_LIBRARY}
+         ${QT_QTDECLARATIVE_LIBRARY}
 --- origsrc/kde-runtime-4.10.5/plasma/declarativeimports/draganddrop/CMakeLists.txt	2013-06-28 12:12:33.407800100 -0500
 +++ src/kde-runtime-4.10.5/plasma/declarativeimports/draganddrop/CMakeLists.txt	2013-08-26 16:46:29.095907000 -0500
 @@ -19,7 +19,7 @@ INCLUDE_DIRECTORIES(

@@ -1,7 +1,7 @@
 inherit kde4
 
 NAME="kde-runtime"
-VERSION=4.10.5
+VERSION=4.11.5
 RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE4 base runtime components"
@@ -37,11 +37,10 @@ kde_runtime_CONTENTS="
 	usr/lib/kde4/libexec/kioexec.exe
 	usr/lib/kde4/libexec/knetattach.exe
 	usr/lib/kde4/platformimports/
+	usr/lib/kde4/plugins/imageformats/
 	usr/lib/kde4/plugins/phonon_platform/
 	usr/lib/libknotifyplugin.dll.a
 	usr/share/applications/kde4/knetattach.desktop
-	usr/share/applications/kde4/nepomukcontroller.desktop
-	usr/share/autostart/nepomukcontroller.desktop
 	usr/share/dbus-1/interfaces/org.kde.KTimeZoned.xml
 	usr/share/dbus-1/interfaces/org.kde.network.kioslavenotifier.xml
 	usr/share/dbus-1/services/org.kde.knotify.service
@@ -86,12 +85,14 @@ kde_runtime_CONTENTS="
 	usr/share/locale/
 	usr/share/man/
 	usr/share/mime/packages/network.xml
+	usr/share/mime/packages/webp.xml
 	usr/share/sounds/
 "
 drkonqi4_SUMMARY="KDE4 crash handler"
 drkonqi4_CONTENTS="
 	usr/lib/kde4/libexec/drkonqi.exe
 	usr/share/kde4/apps/drkonqi/
+	usr/share/kde4/apps/kconf_update/drkonqi-*
 "
 khelpcenter_SUMMARY="KDE help viewer"
 khelpcenter_CONTENTS="
