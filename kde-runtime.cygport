@@ -2,7 +2,7 @@ inherit kde4
 
 NAME="kde-runtime"
 VERSION=4.11.5
-RELEASE=1
+RELEASE=2
 CATEGORY="KDE"
 SUMMARY="KDE4 base runtime components"
 DESCRIPTION="Base runtime components for the K Desktop Environment."
