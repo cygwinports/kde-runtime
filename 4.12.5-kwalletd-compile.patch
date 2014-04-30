@@ -1,0 +1,12 @@
+--- origsrc/kde-runtime-4.12.5/kwalletd/backend/blowfish.h	2014-04-01 17:50:19.000000000 -0500
++++ src/kde-runtime-4.12.5/kwalletd/backend/blowfish.h	2014-04-30 18:21:08.001169700 -0500
+@@ -33,6 +33,9 @@
+ #include "blockcipher.h"
+ #include <kwallet_export.h>
+ 
++#undef _P
++#undef _S
++
+ /* @internal
+  */
+ class KWALLETBACKEND_EXPORT BlowFish : public BlockCipher {

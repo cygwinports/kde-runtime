@@ -14,6 +14,7 @@ PATCH_URI="
 	4.1.0-tcsetpgrp.patch
 	4.5.4-attica-install.patch
 	4.10.5-plasma-qml-module.patch
+	4.12.5-kwalletd-compile.patch
 "
 
 PKG_NAMES="${NAME} drkonqi4 khelpcenter"
