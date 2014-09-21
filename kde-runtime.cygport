@@ -1,7 +1,7 @@
 inherit kde4
 
 NAME="kde-runtime"
-VERSION=4.12.5
+VERSION=4.13.3
 RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE4 base runtime components"
@@ -18,7 +18,6 @@ PATCH_URI="
 "
 
 PKG_NAMES="${NAME} drkonqi4 khelpcenter"
-kde_runtime_REQUIRES="soprano virtuoso-opensource"
 kde_runtime_CONTENTS="
 	--exclude=*khelpcenter*
 	--exclude=index.theme
@@ -54,7 +53,6 @@ kde_runtime_CONTENTS="
 	usr/share/doc/HTML/en/kdesu/
 	usr/share/doc/HTML/en/kioslave/
 	usr/share/doc/HTML/en/knetattach/
-	usr/share/doc/HTML/en/network/
 	usr/share/doc/kde-runtime/
 	usr/share/emoticons/
 	usr/share/icons/default.kde4
@@ -66,6 +64,7 @@ kde_runtime_CONTENTS="
 	usr/share/kde4/apps/kcm_phonon/
 	usr/share/kde4/apps/kcmlocale/
 	usr/share/kde4/apps/kconf_update/devicepreference.upd
+	usr/share/kde4/apps/kconf_update/kwallet-4.13.upd
 	usr/share/kde4/apps/kconf_update/kuriikwsfilter.upd
 	usr/share/kde4/apps/kde/kde.notifyrc
 	usr/share/kde4/apps/kglobalaccel/
