@@ -2,12 +2,16 @@ inherit kde4
 
 NAME="kde-runtime"
 VERSION=4.14.3
-RELEASE=1
+RELEASE=2
 CATEGORY="KDE"
 SUMMARY="KDE4 base runtime components"
 DESCRIPTION="Base runtime components for the K Desktop Environment."
 
 PATCH_URI="
+	fedora/kdebase-runtime-4.3.3-home_onlyshowin_kde.patch
+	fedora/kde-runtime-4.10.4-trash-readonly.patch
+	fedora/kdebase-runtime-4.6.0-canberra.patch
+	fedora/kde-runtime-4.14.3-bz#1164609-CVE-2014-8600.patch
 	4.1.0-kdeeject.patch
 	4.6.4-kioslave-libtirpc.patch
 	4.1.0-socklen_t.patch
