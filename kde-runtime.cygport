@@ -100,6 +100,7 @@ drkonqi4_CONTENTS="
 	usr/share/kde4/apps/kconf_update/drkonqi-*
 "
 khelpcenter_SUMMARY="KDE help viewer"
+khelpcenter_REQUIRES="kde-runtime"
 khelpcenter_CONTENTS="
 	usr/bin/cygkdeinit4_khelpcenter.dll
 	usr/bin/khelpcenter.exe
