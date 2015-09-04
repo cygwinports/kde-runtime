@@ -1,0 +1,22 @@
+--- origsrc/kde-runtime-15.04.3/kioslave/nfs/CMakeLists.txt	2015-06-13 03:26:36.000000000 -0500
++++ src/kde-runtime-15.04.3/kioslave/nfs/CMakeLists.txt	2015-09-03 17:44:48.858614100 -0500
+@@ -1,6 +1,10 @@
+ ## Check for XDR functions
+ include(CheckFunctionExists)
+ 
++pkg_check_modules(TIRPC libtirpc)
++include_directories(${TIRPC_INCLUDE_DIRS})
++set(CMAKE_REQUIRED_LIBRARIES ${TIRPC_LIBRARIES})
++
+ CHECK_FUNCTION_EXISTS(xdr_u_int64_t HAVE_XDR_U_INT64_T)
+ CHECK_FUNCTION_EXISTS(xdr_uint64_t HAVE_XDR_UINT64_T)
+ CHECK_FUNCTION_EXISTS(xdr_u_hyper HAVE_XDR_U_HYPER)
+@@ -31,7 +35,7 @@ set(kio_nfs_PART_SRCS kio_nfs.cpp nfsv2.
+ kde4_add_plugin(kio_nfs ${kio_nfs_PART_SRCS})
+ 
+ 
+-target_link_libraries(kio_nfs   ${KDE4_KIO_LIBS})
++target_link_libraries(kio_nfs   ${KDE4_KIO_LIBS} ${TIRPC_LIBRARIES})
+ 
+ install(TARGETS kio_nfs  DESTINATION ${PLUGIN_INSTALL_DIR} )
+ 
