@@ -20,7 +20,7 @@ PATCH_URI="
 "
 
 PKG_NAMES="${NAME} drkonqi4 khelpcenter"
-kde_runtime_REQUIRES="tzcode"
+kde_runtime_REQUIRES="tzdata"
 kde_runtime_CONTENTS="
 	--exclude=*khelpcenter*
 	--exclude=index.theme
