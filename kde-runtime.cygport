@@ -1,8 +1,8 @@
 inherit kde4
 
 NAME="kde-runtime"
-VERSION=15.04.3
-RELEASE=2
+VERSION=16.08.3
+RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE4 base runtime components"
 DESCRIPTION="Base runtime components for the K Desktop Environment."
@@ -19,7 +19,10 @@ PATCH_URI="
 	15.04.3-libtirpc.patch
 "
 
-PKG_NAMES="${NAME} drkonqi4 khelpcenter"
+# now a separate KF5-based package
+DO_NOT_COMPILE="khelpcenter"
+
+PKG_NAMES="${NAME} drkonqi4"
 kde_runtime_REQUIRES="tzdata"
 kde_runtime_CONTENTS="
 	--exclude=*khelpcenter*
@@ -97,20 +100,6 @@ drkonqi4_CONTENTS="
 	usr/lib/kde4/libexec/drkonqi.exe
 	usr/share/kde4/apps/drkonqi/
 	usr/share/kde4/apps/kconf_update/drkonqi-*
-"
-khelpcenter_SUMMARY="KDE help viewer"
-khelpcenter_REQUIRES="kde-runtime"
-khelpcenter_CONTENTS="
-	usr/bin/cygkdeinit4_khelpcenter.dll
-	usr/bin/khelpcenter.exe
-	usr/lib/kde4/libexec/khc_*
-	usr/share/applications/kde4/Help.desktop
-	usr/share/dbus-1/interfaces/org.kde.khelpcenter.kcmhelpcenter.xml
-	usr/share/doc/HTML/en/khelpcenter/
-	usr/share/doc/HTML/en/onlinehelp/
-	usr/share/kde4/apps/khelpcenter/
-	usr/share/kde4/config.kcfg/khelpcenter.kcfg
-	usr/share/kde4/services/khelpcenter.desktop
 "
 
 DIFF_EXCLUDES="pics"
