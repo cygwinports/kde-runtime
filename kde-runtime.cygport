@@ -1,7 +1,7 @@
 inherit kde4
 
 NAME="kde-runtime"
-VERSION=17.04.2
+VERSION=17.04.3
 RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE4 base runtime components"
@@ -19,10 +19,11 @@ PATCH_URI="
 	15.04.3-libtirpc.patch
 "
 
-# now a separate KF5-based package
-DO_NOT_COMPILE="khelpcenter"
+# now separate KF5-based packages, or obsolete with Plasma 5
+DO_NOT_COMPILE="drkonqi khelpcenter kuiserver"
 
-PKG_NAMES="${NAME} drkonqi4"
+PKG_NAMES="${NAME}"
+kde_runtime_OBSOLETES="drkonqi4"
 kde_runtime_REQUIRES="tzdata"
 kde_runtime_CONTENTS="
 	--exclude=*khelpcenter*
@@ -50,7 +51,6 @@ kde_runtime_CONTENTS="
 	usr/share/dbus-1/interfaces/org.kde.KTimeZoned.xml
 	usr/share/dbus-1/interfaces/org.kde.network.kioslavenotifier.xml
 	usr/share/dbus-1/services/org.kde.knotify.service
-	usr/share/dbus-1/services/org.kde.kuiserver.service
 	usr/share/dbus-1/system-services/org.kde.kcontrol.kcmremotewidgets.service
 	usr/share/desktop-directories/
 	usr/share/doc/HTML/en/fundamentals/
@@ -93,13 +93,6 @@ kde_runtime_CONTENTS="
 	usr/share/mime/packages/network.xml
 	usr/share/mime/packages/webp.xml
 	usr/share/sounds/
-"
-drkonqi4_SUMMARY="KDE4 crash handler"
-drkonqi4_REQUIRES="gdb"
-drkonqi4_CONTENTS="
-	usr/lib/kde4/libexec/drkonqi.exe
-	usr/share/kde4/apps/drkonqi/
-	usr/share/kde4/apps/kconf_update/drkonqi-*
 "
 
 DIFF_EXCLUDES="pics"
