@@ -1,7 +1,7 @@
 inherit kde4
 
 NAME="kde-runtime"
-VERSION=17.04.3
+VERSION=17.08.3
 RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE4 base runtime components"
@@ -93,6 +93,15 @@ kde_runtime_CONTENTS="
 	usr/share/mime/packages/network.xml
 	usr/share/mime/packages/webp.xml
 	usr/share/sounds/
+"
+PKG_IGNORE="
+	etc/postinstall/zp_kde-runtime.sh
+	etc/preremove/kde-runtime.sh
+	usr/lib/libkwalletbackend.dll.a
+	usr/lib/libmolletnetwork.dll.a
+	usr/share/doc/HTML/en/khelpcenter/
+	usr/share/doc/HTML/en/onlinehelp/
+	usr/share/icons/hicolor/index.theme
 "
 
 DIFF_EXCLUDES="pics"
