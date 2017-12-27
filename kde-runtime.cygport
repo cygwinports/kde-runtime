@@ -2,7 +2,7 @@ inherit kde4
 
 NAME="kde-runtime"
 VERSION=17.08.3
-RELEASE=1
+RELEASE=2
 CATEGORY="KDE"
 SUMMARY="KDE4 base runtime components"
 DESCRIPTION="Base runtime components for the K Desktop Environment."
@@ -33,16 +33,16 @@ kde_runtime_CONTENTS="
 	etc/xdg/menus/kde-information.menu
 	usr/bin/
 	usr/include/
+	usr/libexec/kde4/kcmremotewidgetshelper.exe
+	usr/libexec/kde4/kdeeject
+	usr/libexec/kde4/kdesu.exe
+	usr/libexec/kde4/kdesud.exe
+	usr/libexec/kde4/kdontchangethehostname.exe
+	usr/libexec/kde4/kioexec.exe
+	usr/libexec/kde4/knetattach.exe
 	usr/lib/kconf_update_bin/phonon_*
 	usr/lib/kde4/*.dll
 	usr/lib/kde4/imports/
-	usr/lib/kde4/libexec/kcmremotewidgetshelper.exe
-	usr/lib/kde4/libexec/kdeeject
-	usr/lib/kde4/libexec/kdesu.exe
-	usr/lib/kde4/libexec/kdesud.exe
-	usr/lib/kde4/libexec/kdontchangethehostname.exe
-	usr/lib/kde4/libexec/kioexec.exe
-	usr/lib/kde4/libexec/knetattach.exe
 	usr/lib/kde4/platformimports/
 	usr/lib/kde4/plugins/imageformats/
 	usr/lib/kde4/plugins/phonon_platform/
