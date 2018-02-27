@@ -2,7 +2,7 @@ inherit kde4
 
 NAME="kde-runtime"
 VERSION=17.08.3
-RELEASE=2
+RELEASE=3
 CATEGORY="KDE"
 SUMMARY="KDE4 base runtime components"
 DESCRIPTION="Base runtime components for the K Desktop Environment."
@@ -10,17 +10,18 @@ DESCRIPTION="Base runtime components for the K Desktop Environment."
 PATCH_URI="
 	fedora/kdebase-runtime-4.3.3-home_onlyshowin_kde.patch
 	fedora/kde-runtime-4.10.4-trash-readonly.patch
+	fedora/kde-runtime-17.08.3-nfs-libtirpc.patch
 	4.1.0-kdeeject.patch
 	4.1.0-socklen_t.patch
 	4.1.0-tcsetpgrp.patch
 	4.5.4-attica-install.patch
 	4.10.5-plasma-qml-module.patch
 	4.12.5-kwalletd-compile.patch
-	15.04.3-libtirpc.patch
+	17.08-disable-components.patch
 "
 
 # now separate KF5-based packages, or obsolete with Plasma 5
-DO_NOT_COMPILE="drkonqi khelpcenter kuiserver"
+DO_NOT_COMPILE="drkonqi khelpcenter kuiserver plasma"
 
 PKG_NAMES="${NAME}"
 kde_runtime_OBSOLETES="drkonqi4"
@@ -28,12 +29,10 @@ kde_runtime_REQUIRES="tzdata"
 kde_runtime_CONTENTS="
 	--exclude=*khelpcenter*
 	--exclude=index.theme
-	etc/dbus-1/system.d/org.kde.kcontrol.kcmremotewidgets.conf
 	etc/postinstall/kde-runtime.sh
 	etc/xdg/menus/kde-information.menu
 	usr/bin/
 	usr/include/
-	usr/libexec/kde4/kcmremotewidgetshelper.exe
 	usr/libexec/kde4/kdeeject
 	usr/libexec/kde4/kdesu.exe
 	usr/libexec/kde4/kdesud.exe
@@ -42,8 +41,6 @@ kde_runtime_CONTENTS="
 	usr/libexec/kde4/knetattach.exe
 	usr/lib/kconf_update_bin/phonon_*
 	usr/lib/kde4/*.dll
-	usr/lib/kde4/imports/
-	usr/lib/kde4/platformimports/
 	usr/lib/kde4/plugins/imageformats/
 	usr/lib/kde4/plugins/phonon_platform/
 	usr/lib/libknotifyplugin.dll.a
@@ -51,7 +48,6 @@ kde_runtime_CONTENTS="
 	usr/share/dbus-1/interfaces/org.kde.KTimeZoned.xml
 	usr/share/dbus-1/interfaces/org.kde.network.kioslavenotifier.xml
 	usr/share/dbus-1/services/org.kde.knotify.service
-	usr/share/dbus-1/system-services/org.kde.kcontrol.kcmremotewidgets.service
 	usr/share/desktop-directories/
 	usr/share/doc/HTML/en/fundamentals/
 	usr/share/doc/HTML/en/kcontrol/
